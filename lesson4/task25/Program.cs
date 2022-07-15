@@ -2,8 +2,8 @@
 
 // 3, 5 -> 243 (3⁵)
 
-int a = 2;
-int b = 4;
+int a = 3;
+int b = 5;
 int degree (int result)
 {
     int res = a*a;
@@ -13,5 +13,11 @@ int degree (int result)
     }
     return res;
 }
-
-Console.WriteLine(degree(a));
+if (b<2)
+{
+    Console.WriteLine(a);
+}
+else
+{
+    Console.WriteLine(degree(a));
+}
