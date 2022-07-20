@@ -2,7 +2,7 @@
 
 Console.WriteLine("Введите число:");
 
-string n = Console.ReadLine();
+string n = Console.ReadLine()!;
 
 int index = int.Parse(n[2].ToString());
 

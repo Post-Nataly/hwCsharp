@@ -2,7 +2,7 @@
 
 Console.WriteLine("Введите трехзначное число:");
 
-string num = Console.ReadLine();
+string num = Console.ReadLine()!;
 
 int n = int.Parse(num);
 
