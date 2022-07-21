@@ -12,7 +12,13 @@ var b2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите k2: ");
 var k2 = Convert.ToDouble(Console.ReadLine());
 
-var x = (b2 - b1)/(k1 - k2);
-var y = k1 * x + b1;
-
-Console.WriteLine($"Координаты точки пересечения: ({x}; {y})");
+if (k1 == k2)
+{
+    Console.WriteLine("Прямые параллельны или у них нет точек пересечения");
+}
+else
+{
+    var x = (b2 - b1)/(k1 - k2);
+    var y = k1 * x + b1;
+Console.WriteLine($"Координаты точки пересечения: х = {x}, y = {y} ");
+}
