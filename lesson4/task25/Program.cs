@@ -4,7 +4,7 @@
 
 int a = 3;
 int b = 5;
-int degree (int result)
+int Degree (int result)
 {
     int res = a*a;
     for (int i = 2; i < b; i++)
@@ -19,5 +19,5 @@ if (b<2)
 }
 else
 {
-    Console.WriteLine(degree(a));
+    Console.WriteLine(Degree(a));
 }
