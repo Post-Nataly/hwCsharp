@@ -5,7 +5,6 @@
 
 static int Akkerman(int m, int n)
 {
-    while( m>=0 && n>=0)
     if (m == 0)
     {
         return n + 1;
@@ -24,7 +23,9 @@ static int Akkerman(int m, int n)
 
 }
 
-static void Main(String[] args)
+static void Main(string[] args)
 {
     Console.WriteLine($"A(m,n) = {Akkerman(2, 3)}");
 }
+
+Main(args);
