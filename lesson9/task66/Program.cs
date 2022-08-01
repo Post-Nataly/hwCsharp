@@ -23,9 +23,4 @@ static int Akkerman(int m, int n)
 
 }
 
-static void Main(string[] args)
-{
     Console.WriteLine($"A(m,n) = {Akkerman(2, 3)}");
-}
-
-Main(args);

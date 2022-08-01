@@ -4,13 +4,19 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-int M = 4;
-int N = 8;
-int sum = 0;
-
-for (int i = M; i <= N; i++)
+static int Summ(int M, int N)
 {
-    sum += i;
+    if (M > 0 && M < N)
+    {
+        return M + Summ(M + 1, N);
+    }
+    else
+    if (M == N)
+    {
+        return M;
+    }
+    else
+    return 0;
 }
 
-Console.Write(sum);
+Console.Write($"Сумма натуральных элементов = {Summ(1, 15)}");
